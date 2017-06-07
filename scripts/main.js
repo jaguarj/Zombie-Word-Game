@@ -57,11 +57,26 @@ alert("You attack the zombies with your " + weapon + " and struggle to hold them
 
 var survival = randomNumber(2);
 
-	if (survival === 0) {
+switch(survival) {
+	case survival = 0:
 		alert("The brain eating zombies have bitten you! You loose!! Yummy brains!!");
-	} else if (survival > 0) {
+		break;
+	case survival = 1:
 		alert("You are a master with your " + weapon + " and slay the brain eating zombies!! You win!!");
-	}
+		break;
+	case survival = 2:
+		alert("Your " + weapon + " can't stop the zombies, run for your life!!");
+		break;
+	case survival = 3:
+		alert("You've tripped over a dead body and lost your " + weapon + " the zombies are coming!!");
+		break;
+	case survial = 4:
+		alert("Whoa, you're like a ninja with that " + weapon + " ! Watch out zombies!! You've won the war!");
+		break;
+	default:
+		alert("You tough, but you must keep killing them if you want to stay alive!!");
+		break;
+}
 };
 
 beginGame();
