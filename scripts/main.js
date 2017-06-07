@@ -44,7 +44,7 @@ function randomNumber(range) {
 	return Math.round(Math.random() * range)
 };
 
-function beignGame() {
+function beginGame() {
 
 alert(beginningScenarios[ randomNumber(beginningScenarios.length - 1) ]);
 
