@@ -65,3 +65,5 @@ var survival = randomNumber(2);
 };
 
 beginGame();
+
+console.log("Zombies are approaching!");
