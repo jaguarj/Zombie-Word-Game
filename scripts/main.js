@@ -53,7 +53,7 @@ var weaponList = ["gun", "rake", "textbook", "shovel", "car", "rock" ,"volley ba
 var weapon = weaponList [randomNumber( weaponList.length - 1 ) ];
 alert("Noticing the carnage surrounding you, you grab the nearest weapon you can find! You grab a " + weapon + "!");
 
-alert("You attack the zombies with your *" + weapon + " and struggle to hold them off!");
+alert("You attack the zombies with your " + weapon + " and struggle to hold them off!");
 
 var survival = randomNumber(2);
 
