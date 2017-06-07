@@ -44,6 +44,8 @@ function randomNumber(range) {
 	return Math.round(Math.random() * range)
 };
 
+function beignGame() {
+
 alert(beginningScenarios[ randomNumber(beginningScenarios.length - 1) ]);
 
 var weaponList = ["gun", "rake", "textbook", "shovel", "car", "rock" ,"volley ball"];
@@ -51,12 +53,15 @@ var weaponList = ["gun", "rake", "textbook", "shovel", "car", "rock" ,"volley ba
 var weapon = weaponList [randomNumber( weaponList.length - 1 ) ];
 alert("Noticing the carnage surrounding you, you grab the nearest weapon you can find! You grab a " + weapon + "!");
 
-alert("You attack the zombies with your    " + " " + weapon + " and struggle to hold them off!");
+alert("You attack the zombies with your " + weapon + " and struggle to hold them off!");
 
 var survival = randomNumber(2);
 
-if (survival === 0) {
-	alert("The brain eating zombies have bitten you! You loose!! Yummy brains!!");
-} else if (survival > 0) {
-	alert("You are a master with your " + weapon + " and slay the brain eating zombies!! You win!!");
-}
+	if (survival === 0) {
+		alert("The brain eating zombies have bitten you! You loose!! Yummy brains!!");
+	} else if (survival > 0) {
+		alert("You are a master with your " + weapon + " and slay the brain eating zombies!! You win!!");
+	}
+};
+
+beginGame();
