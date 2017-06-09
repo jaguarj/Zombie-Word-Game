@@ -38,7 +38,7 @@ var outcome;
 
 window.alert("Agggghhhhhh!! The zombies are coming, the zombies are coming!! \
             Welcome to the nightmare of the zombie apocalypse where you have \
-            to fight, or run, for your life!");
+            to fight, or run for your life!");
 
 function beginGame() {
 
@@ -57,10 +57,20 @@ var character = {
 	strength: 0,
 	stealth: 0,
 	name: prompt("What is your name?"),
-	characterClass: prompt("You will need to choose a character in order to survive! \
-	What was your occupation before the zombie apocalypse? \
+	characterClass: prompt("You will need to choose a character in order to survive!\
+	What was your occupation before the zombie apocalypse?\
 	(Choose your occupation: Soldier, Lawyer, Web Developer)").toLowerCase()
 };
+
+if (!character.name) {
+	character.name = window.prompt("You didn't tell me your name... Let's try this again! What is your name player?");
+
+	if (!character.name) {
+		character.name = prompt("Since you didn't give me your name, I'll just give you one! Let's call you Kel Citrus!");
+		character.name = "Kel Citrus";
+	}
+}
+
 
 
 
