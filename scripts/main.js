@@ -33,6 +33,10 @@ Remember: There are many ways to create things with code! The most important par
 If you can't get something to work, try making it simpler.
 After, look for ways you might improve your code!
 */
+window.alert("Agggghhhhhh!! The zombies are coming, the zombies are coming!! \
+            Welcome to the nightmare of the zombie apocalypse where you have \
+            to fight, or run, for your life!");
+
 
 var beginningScenarios = [
 	"You wake up in a forest disoriented and can't remember how you got there. You stumble around and hear moaning and groaning and soon find out the forest is cralling with zombies!",
