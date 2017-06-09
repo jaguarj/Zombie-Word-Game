@@ -33,10 +33,14 @@ Remember: There are many ways to create things with code! The most important par
 If you can't get something to work, try making it simpler.
 After, look for ways you might improve your code!
 */
+
+var outcome;
+
 window.alert("Agggghhhhhh!! The zombies are coming, the zombies are coming!! \
             Welcome to the nightmare of the zombie apocalypse where you have \
             to fight, or run, for your life!");
 
+function beginGame() {
 
 var beginningScenarios = [
 	"You wake up in a forest disoriented and can't remember how you got there. You stumble around and hear moaning and groaning and soon find out the forest is cralling with zombies!",
@@ -48,7 +52,18 @@ function randomNumber(range) {
 	return Math.round(Math.random() * range)
 };
 
-function beginGame() {
+var character = {
+	health: 5,
+	strength: 0,
+	stealth: 0,
+	name: prompt("What is your name?"),
+	characterClass: prompt("You will need to choose a character in order to survive! \
+	What was your occupation before the zombie apocalypse? \
+	(Choose your occupation: Soldier, Lawyer, Web Developer)").toLowerCase()
+};
+
+
+
 
 alert(beginningScenarios[ randomNumber(beginningScenarios.length - 1) ]);
 
@@ -80,8 +95,10 @@ switch(survival) {
 	default:
 		alert("You tough, but you must keep killing them if you want to stay alive!!");
 		break;
-}
 };
+
+// Closing bracket for start game funciton.
+}
 
 beginGame();
 
