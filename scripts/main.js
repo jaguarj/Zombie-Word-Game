@@ -38,7 +38,7 @@ var outcome;
 
 window.alert("Agggghhhhhh!! The zombies are coming, the zombies are coming!! \
             Welcome to the nightmare of the zombie apocalypse where you have \
-            to fight, or run for your life!");
+            to fight, or run for your life! You will be given a random scenario!");
 
 function beginGame() {
 
@@ -72,7 +72,19 @@ if (!character.name) {
 }
 
 
+if (character.characterClass === "soldier") {
+	character.strength = 10;
+	character.stealth = 5;
+};
 
+if (character.characterClass === "lawyer") {
+	character.stealth = 6;
+};
+
+if (character.characterClass === "web developer") {
+	character.strength = 10;
+	character.stealth = 10;
+};
 
 
 alert(beginningScenarios[ randomNumber(beginningScenarios.length - 1) ]);
